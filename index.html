@@ -40,10 +40,16 @@
     ]
   }
   </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="preload" href="/fonts/inter-latin.woff" as="font" type="font/woff" crossorigin />
   <style>
+    @font-face {
+      font-family: 'Inter';
+      src: url('/fonts/inter-latin.woff') format('woff');
+      font-weight: 300 700;
+      font-style: normal;
+      font-display: swap;
+    }
+
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
